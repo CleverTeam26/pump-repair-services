@@ -96,6 +96,14 @@
         },
         {
           "@type": "Place",
+          "name": "Windermere, FL"
+        },
+        {
+          "@type": "Place",
+          "name": "Gotha, FL"
+        },
+        {
+          "@type": "Place",
           "name": "Winter Garden, FL"
         },
         {
@@ -257,6 +265,14 @@
         {
           "@type": "Place",
           "name": "Ocoee, FL"
+        },
+        {
+          "@type": "Place",
+          "name": "Windermere, FL"
+        },
+        {
+          "@type": "Place",
+          "name": "Gotha, FL"
         },
         {
           "@type": "Place",
@@ -604,6 +620,7 @@ section{padding:clamp(64px,8vw,104px) 0}
 .town-list{display:flex;flex-wrap:wrap;gap:8px}
 .town-list a{color:#fff;text-decoration:none;font-size:14.5px;font-weight:600;padding:8px 14px;border-radius:var(--pill);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);transition:background .2s,border-color .2s}
 .town-list a:hover{background:rgba(57,144,198,.22);border-color:var(--water)}
+.town-list span{color:#c9d0d8;font-size:14.5px;font-weight:600;padding:8px 14px;border-radius:var(--pill);border:1px dashed rgba(255,255,255,.18)}
 .town-list a.hq{background:var(--navy);border-color:var(--navy)}
 .map-card{border-radius:20px;overflow:hidden;background:#fff;color:var(--charcoal);box-shadow:0 30px 60px -24px rgba(0,0,0,.7)}
 .map-card iframe{display:block;width:100%;height:340px;border:0;filter:saturate(.9)}
@@ -825,10 +842,8 @@ section{padding:clamp(64px,8vw,104px) 0}
     </a>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="/services/">Services</a>
-      <a href="/emergency-well-pump-repair/">Emergency</a>
       <a href="/service-areas/" aria-current="page">Service Areas</a>
       <a href="/about/">About</a>
-      <a href="/#reviews">Reviews</a>
       <a href="/blog/">Resources</a>
       <a href="/contact/">Contact</a>
     </nav>
@@ -871,8 +886,8 @@ section{padding:clamp(64px,8vw,104px) 0}
       <p class="lead reveal d2">Most properties we visit draw from private wells, and many run a second well just for irrigation. Our trucks leave from Apopka, so the closest communities get the shortest drive times. We cover the wider 25-mile area every day, and answer no-water emergencies 24/7.</p>
       <div class="tiers reveal d3">
         <a class="tier" href="#primary"><b>10</b><span>Primary communities<br><small>Apopka &amp; nearby</small></span></a>
-        <a class="tier" href="#secondary"><b>12</b><span>Surrounding communities<br><small>Orange, Seminole &amp; Lake</small></span></a>
-        <a class="tier" href="#also"><b>8</b><span>Also serving<br><small>Farther-out towns</small></span></a>
+        <a class="tier" href="#secondary"><b>14</b><span>Surrounding communities<br><small>Orange, Seminole &amp; Lake</small></span></a>
+        <a class="tier" href="#also"><b>7</b><span>Also serving<br><small>Farther-out towns</small></span></a>
       </div>
     </div>
     <div class="map-card reveal d1">
@@ -974,8 +989,8 @@ section{padding:clamp(64px,8vw,104px) 0}
     <div class="region-grid">
       <article class="region reveal">
         <h3>West Orange County</h3>
-        <p>Ocoee and Winter Garden grew up around the lakes south of Lake Apopka. Older neighborhoods and larger lots still run private wells for the house or the sprinklers. Where a property also has city reclaimed water, the well has to stay completely separate from the reclaimed lines.</p>
-        <div class="town-list"><a href="/service-areas/ocoee-fl/">Ocoee</a><a href="/service-areas/winter-garden-fl/">Winter Garden</a></div>
+        <p>Ocoee and Winter Garden grew up around the lakes south of Lake Apopka, with Gotha and Windermere just to the south along the Butler Chain of Lakes. Older neighborhoods and larger lots still run private wells for the house or the sprinklers. Where a property also has city reclaimed water, the well has to stay completely separate from the reclaimed lines.</p>
+        <div class="town-list"><a href="/service-areas/ocoee-fl/">Ocoee</a><a href="/service-areas/winter-garden-fl/">Winter Garden</a><a href="/service-areas/windermere-fl/">Windermere</a><a href="/service-areas/gotha-fl/">Gotha</a></div>
       </article>
       <article class="region reveal d1">
         <h3>Pine Hills, Maitland &amp; north Orlando</h3>
@@ -998,7 +1013,7 @@ section{padding:clamp(64px,8vw,104px) 0}
       <h3>Also serving</h3>
       <p>We also take calls in these communities just beyond our core area. Call first to confirm timing.</p>
       <div class="town-list">
-        <a href="/service-areas/south-apopka-fl/">South Apopka</a><a href="/service-areas/paradise-heights-fl/">Paradise Heights</a><a href="/service-areas/oakland-fl/">Oakland</a><a href="/service-areas/windermere-fl/">Windermere</a><a href="/service-areas/winter-park-fl/">Winter Park</a><a href="/service-areas/lake-mary-fl/">Lake Mary</a><a href="/service-areas/winter-springs-fl/">Winter Springs</a><a href="/service-areas/clermont-fl/">Clermont</a>
+        <span>South Apopka</span><span>Paradise Heights</span><span>Oakland</span><span>Winter Park</span><span>Lake Mary</span><span>Winter Springs</span><span>Clermont</span>
       </div>
     </div>
   </div>
@@ -1132,9 +1147,7 @@ section{padding:clamp(64px,8vw,104px) 0}
         <h3>Company</h3>
         <ul>
           <li><a href="/about/">About Steven Perry</a></li>
-          <li><a href="/reviews/">Reviews</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/pricing/">How our quotes work</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
           <li><a href="/blog/">Resources &amp; guides</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
@@ -1143,7 +1156,7 @@ section{padding:clamp(64px,8vw,104px) 0}
     </div>
     <div class="legal">
       <span>© <span id="yr">2026</span> Pump Repair Services · 925 E Sandpiper St, Apopka, FL 32712 · <a href="tel:+14076255499">407-625-5499</a></span>
-      <span><a href="/privacy-policy/">Privacy</a> · <a href="/terms/">Terms</a></span>
+      <span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-conditions/">Terms</a></span>
     </div>
   </div>
 </footer>

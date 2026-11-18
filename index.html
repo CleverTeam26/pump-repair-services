@@ -72,7 +72,7 @@
         {"@type": "City", "name": "Casselberry, FL"},
         {"@type": "City", "name": "Maitland, FL"},
         {"@type": "City", "name": "Winter Garden, FL"},
-        {"@type": "City", "name": "Ocoee, FL"},
+        {"@type": "City", "name": "Ocoee, FL"}, {"@type": "City", "name": "Windermere, FL"}, {"@type": "City", "name": "Gotha, FL"},
         {"@type": "City", "name": "Mount Dora, FL"},
         {"@type": "City", "name": "Eustis, FL"},
         {"@type": "City", "name": "Tavares, FL"},
@@ -136,7 +136,7 @@
         {"@type": "Question", "name": "Are you licensed and insured?",
          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Pump Repair Services is a licensed, insured Florida business, and every job is backed by a 5-year workmanship warranty."}},
         {"@type": "Question", "name": "What areas do you serve?",
-         "acceptedAnswer": {"@type": "Answer", "text": "We're based at 925 E Sandpiper St in Apopka and serve communities within about 25 miles. Our primary area is Apopka, Zellwood, Plymouth, Clarcona, Lockhart, Forest City, Wekiwa Springs, Mount Plymouth, Sorrento and Tangerine. We also cover Altamonte Springs, Longwood, Casselberry, Maitland, Winter Garden, Ocoee, Mount Dora, Eustis, Tavares, Pine Hills, Hiawassee and north Orlando."}}
+         "acceptedAnswer": {"@type": "Answer", "text": "We're based at 925 E Sandpiper St in Apopka and serve communities within about 25 miles. Our primary area is Apopka, Zellwood, Plymouth, Clarcona, Lockhart, Forest City, Wekiwa Springs, Mount Plymouth, Sorrento and Tangerine. We also cover Altamonte Springs, Longwood, Casselberry, Maitland, Winter Garden, Ocoee, Windermere, Gotha, Mount Dora, Eustis, Tavares, Pine Hills, Hiawassee and north Orlando."}}
       ]
     }
   ]
@@ -361,6 +361,7 @@ section{padding:clamp(64px,8vw,104px) 0}
 .town-list{display:flex;flex-wrap:wrap;gap:8px}
 .town-list a{color:#fff;text-decoration:none;font-size:14.5px;font-weight:600;padding:8px 14px;border-radius:var(--pill);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);transition:background .2s,border-color .2s}
 .town-list a:hover{background:rgba(57,144,198,.22);border-color:var(--water)}
+.town-list span{color:#c9d0d8;font-size:14.5px;font-weight:600;padding:8px 14px;border-radius:var(--pill);border:1px dashed rgba(255,255,255,.18)}
 .town-list a.hq{background:var(--navy);border-color:var(--navy)}
 .map-card{border-radius:20px;overflow:hidden;background:#fff;color:var(--charcoal);box-shadow:0 30px 60px -24px rgba(0,0,0,.7)}
 .map-card iframe{display:block;width:100%;height:340px;border:0;filter:saturate(.9)}
@@ -535,12 +536,10 @@ section{padding:clamp(64px,8vw,104px) 0}
     </a>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="/services/">Services</a>
-      <a href="/emergency-well-pump-repair/">Emergency</a>
       <a href="/service-areas/">Service Areas</a>
       <a href="/about/">About</a>
-      <a href="#reviews">Reviews</a>
       <a href="/blog/">Resources</a>
-      <a href="#contact">Contact</a>
+      <a href="/contact/">Contact</a>
     </nav>
     <div class="header-cta">
       <a class="btn btn-primary pulse" href="tel:+14076255499" data-track="call-header" aria-label="Call Pump Repair Services at 407-625-5499">
@@ -565,7 +564,7 @@ section{padding:clamp(64px,8vw,104px) 0}
       <p class="sub reveal d2">No water? Low pressure? A family-run Apopka company since 1992, repairing and replacing well pumps, pressure tanks and whole well systems in Apopka, Zellwood, Wekiwa Springs and communities within 25 miles, 24/7.</p>
       <div class="hero-actions reveal d3">
         <a class="btn btn-primary btn-lg pulse" href="tel:+14076255499" data-track="call-hero"><svg><use href="#i-phone"/></svg>Call 407-625-5499</a>
-        <a class="btn btn-ghost btn-lg" href="#contact">Schedule a diagnosis</a>
+        <a class="btn btn-ghost btn-lg" href="/contact/">Schedule a diagnosis</a>
       </div>
       <ul class="hero-points reveal d3">
         <li><span class="check"><svg><use href="#i-check"/></svg></span>Guaranteed 2-hour emergency arrival</li>
@@ -661,7 +660,7 @@ section{padding:clamp(64px,8vw,104px) 0}
       </a>
       <a class="svc reveal" href="/services/well-pump-replacement/">
         <img src="images/dual-pressure-tank-installation.webp" width="720" height="960" loading="lazy" alt="Twin pressure tank and well pump system installation with new PVC plumbing">
-        <div class="svc-body"><h3>Pump Replacement &amp; Installation</h3><p>Grundfos and Franklin systems and constant-pressure upgrades, usually installed in about three hours.</p><span class="more">Learn more <svg><use href="#i-arrow"/></svg></span></div>
+        <div class="svc-body"><h3>Pump Replacement &amp; Installation</h3><p>Grundfos and Franklin pumps matched to your well and water, usually installed in about three hours.</p><span class="more">Learn more <svg><use href="#i-arrow"/></svg></span></div>
       </a>
       <a class="svc reveal d1" href="/services/irrigation-pump-repair/">
         <img src="images/irrigation-well-pump-repair-valve.webp" width="900" height="900" loading="lazy" alt="Technician servicing an irrigation well valve and pump line">
@@ -676,7 +675,7 @@ section{padding:clamp(64px,8vw,104px) 0}
     <div class="svc-mini">
       <a class="mini reveal" href="/emergency-well-pump-repair/"><span class="ico"><svg><use href="#i-bolt"/></svg></span><div><b>24/7 Emergency</b><span>No-water calls, 2-hour arrival</span></div></a>
       <a class="mini reveal d1" href="/services/centrifugal-pump-repair/"><span class="ico"><svg><use href="#i-gauge"/></svg></span><div><b>Centrifugal, Transfer &amp; Booster</b><span>Pressure boost, transfer and drainage pumps</span></div></a>
-      <a class="mini reveal d2" href="/services/well-inspection/"><span class="ico"><svg><use href="#i-search"/></svg></span><div><b>Well Inspections</b><span>Home sales, maintenance and water testing</span></div></a>
+      <a class="mini reveal d2" href="/services/well-repair/#well-inspection"><span class="ico"><svg><use href="#i-search"/></svg></span><div><b>Well System Checks</b><span>Home purchases, storm season and water testing</span></div></a>
       <a class="mini reveal d3" href="/services/commercial-agricultural-pump-service/"><span class="ico"><svg><use href="#i-building"/></svg></span><div><b>Commercial &amp; Ag</b><span>Nurseries, parks, churches, RV parks</span></div></a>
     </div>
   </div>
@@ -690,14 +689,13 @@ section{padding:clamp(64px,8vw,104px) 0}
       <h2 class="title reveal d1" id="rehab-title">Well repair, rehab &amp; abandonment</h2>
       <p class="lead reveal d2">When the problem is the well itself, we fix that too: from a leaking drop pipe to a failing casing, plus code-compliant plugging of wells you no longer use.</p>
       <div class="chips reveal d3">
-        <a href="/services/well-repair/drop-pipe-replacement/">Drop pipe replacement</a>
-        <a href="/services/well-repair/draw-down-correction/">Draw-down correction</a>
-        <a href="/services/well-repair/well-seal-cap-replacement/">Well seal &amp; cap replacement</a>
-        <a href="/services/well-repair/well-chlorination/">Well chlorination</a>
-        <a href="/services/well-repair/well-casing-sleeving/">Casing repair &amp; sleeving</a>
-        <a href="/services/well-repair/well-screening/">Well screening</a>
+        <a href="/services/well-repair/#drop-pipe">Drop pipe replacement</a>
+        <a href="/services/well-repair/#draw-down">Draw-down correction</a>
+        <a href="/services/well-repair/#well-seal-cap">Wellhead cap, seal &amp; extension</a>
+        <a href="/services/well-repair/#chlorination">Well chlorination</a>
+        <a href="/services/well-repair/#casing-sleeving">Casing repair &amp; sleeving</a>
         <a href="/services/well-repair/well-abandonment/">Well abandonment</a>
-        <a href="/services/water-treatment/water-testing/">Water testing</a>
+        <a href="/services/water-treatment/#water-testing">Water testing</a>
       </div>
     </div>
     <div class="rehab-photos">
@@ -744,11 +742,11 @@ section{padding:clamp(64px,8vw,104px) 0}
       <article class="tip reveal d3"><div class="ico"><svg><use href="#i-sprout"/></svg></div><h3>Irrigation wells</h3><p>Apopka's nurseries and the farms around Zellwood lean hard on irrigation wells. On a city-metered Apopka property, one can also need a backflow assembly and testing. We handle it.</p></article>
     </div>
     <div class="problems reveal">
-      <a href="/blog/well-pump-runs-but-no-water/">No water at all</a>
+      <a href="/blog/well-pump-runs-but-no-water-comes-out-of-the-faucet/">No water at all</a>
       <a href="/blog/why-wont-my-well-hold-steady-water-pressure/">Low or surging pressure</a>
-      <a href="/blog/why-does-my-well-pump-keep-short-cycling/">Pump short cycling</a>
+      <a href="/services/pressure-tank-repair/">Pump short cycling</a>
       <a href="/blog/why-does-my-well-pump-keep-tripping-the-breaker/">Pump trips the breaker</a>
-      <a href="/blog/why-does-my-well-water-smell-like-sulfur/">Rotten-egg smell</a>
+      <a href="/services/water-treatment/iron-sulfur-removal/">Rotten-egg smell</a>
       <a href="/blog/why-does-my-well-water-stain-sinks-and-toilets-rusty-orange/">Rusty orange stains</a>
     </div>
   </div>
@@ -809,6 +807,8 @@ section{padding:clamp(64px,8vw,104px) 0}
           <a href="/service-areas/maitland-fl/">Maitland</a>
           <a href="/service-areas/winter-garden-fl/">Winter Garden</a>
           <a href="/service-areas/ocoee-fl/">Ocoee</a>
+          <a href="/service-areas/windermere-fl/">Windermere</a>
+          <a href="/service-areas/gotha-fl/">Gotha</a>
           <a href="/service-areas/mount-dora-fl/">Mount Dora</a>
           <a href="/service-areas/eustis-fl/">Eustis</a>
           <a href="/service-areas/tavares-fl/">Tavares</a>
@@ -819,14 +819,13 @@ section{padding:clamp(64px,8vw,104px) 0}
       <div class="county reveal">
         <h3>Also serving</h3>
         <div class="town-list">
-          <a href="/service-areas/south-apopka-fl/">South Apopka</a>
-          <a href="/service-areas/paradise-heights-fl/">Paradise Heights</a>
-          <a href="/service-areas/oakland-fl/">Oakland</a>
-          <a href="/service-areas/windermere-fl/">Windermere</a>
-          <a href="/service-areas/winter-park-fl/">Winter Park</a>
-          <a href="/service-areas/lake-mary-fl/">Lake Mary</a>
-          <a href="/service-areas/winter-springs-fl/">Winter Springs</a>
-          <a href="/service-areas/clermont-fl/">Clermont</a>
+          <span>South Apopka</span>
+          <span>Paradise Heights</span>
+          <span>Oakland</span>
+          <span>Winter Park</span>
+          <span>Lake Mary</span>
+          <span>Winter Springs</span>
+          <span>Clermont</span>
         </div>
       </div>
     </div>
@@ -881,7 +880,7 @@ section{padding:clamp(64px,8vw,104px) 0}
       <details class="reveal"><summary>How long will I be without water during a pump replacement?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p class="ans">Our trucks carry complete pumping systems, so a full replacement is usually finished in about three hours, with water flowing again the same visit.</p></details>
       <details class="reveal"><summary>Can you fix rotten-egg smell or rusty, staining well water?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p class="ans">Yes. Iron staining and sulfur (rotten-egg) odor are common in Apopka-area well water. We install whole-house treatment sized to your water, using aeration-based methods rather than chlorine.</p></details>
       <details class="reveal"><summary>Are you licensed and insured?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p class="ans">Yes. Pump Repair Services is a licensed, insured Florida business, and every job is backed by a 5-year workmanship warranty.</p></details>
-      <details class="reveal"><summary>What areas do you serve?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p class="ans">We're based at 925 E Sandpiper St in Apopka and serve communities within about 25 miles. Our primary area is Apopka, Zellwood, Plymouth, Clarcona, Lockhart, Forest City, Wekiwa Springs, Mount Plymouth, Sorrento and Tangerine. We also cover Altamonte Springs, Longwood, Casselberry, Maitland, Winter Garden, Ocoee, Mount Dora, Eustis, Tavares, Pine Hills, Hiawassee and north Orlando.</p></details>
+      <details class="reveal"><summary>What areas do you serve?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p class="ans">We're based at 925 E Sandpiper St in Apopka and serve communities within about 25 miles. Our primary area is Apopka, Zellwood, Plymouth, Clarcona, Lockhart, Forest City, Wekiwa Springs, Mount Plymouth, Sorrento and Tangerine. We also cover Altamonte Springs, Longwood, Casselberry, Maitland, Winter Garden, Ocoee, Windermere, Gotha, Mount Dora, Eustis, Tavares, Pine Hills, Hiawassee and north Orlando.</p></details>
     </div>
   </div>
 </section>
@@ -970,9 +969,7 @@ section{padding:clamp(64px,8vw,104px) 0}
         <h3>Company</h3>
         <ul>
           <li><a href="/about/">About Steven Perry</a></li>
-          <li><a href="/reviews/">Reviews</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/pricing/">How our quotes work</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
           <li><a href="/blog/">Resources &amp; guides</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
@@ -981,7 +978,7 @@ section{padding:clamp(64px,8vw,104px) 0}
     </div>
     <div class="legal">
       <span>© <span id="yr">2026</span> Pump Repair Services · 925 E Sandpiper St, Apopka, FL 32712 · <a href="tel:+14076255499">407-625-5499</a></span>
-      <span><a href="/privacy-policy/">Privacy</a> · <a href="/terms/">Terms</a></span>
+      <span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-conditions/">Terms</a></span>
     </div>
   </div>
 </footer>
